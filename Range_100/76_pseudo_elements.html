@@ -1,0 +1,109 @@
+
+
+   <!-- CSS Pseudo Elements -->
+<!-- A pseudo-element is a keyword added to a selector that lets you style specific parts of an element. -->
+
+<!-- 1. ::before -->
+<!-- allows you to insert content before the actual content of an element.  -->
+
+<html>
+<head>
+    <style>
+        p::before {
+            content: " ";
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <p>This is a paragraph.</p>
+</body>
+</html>
+
+<!-- 2. ::after -->
+<!-- allows you to insert content after the actual content of an element. also styling etc. -->
+
+<html>
+<head>
+    <style>
+        p::after {
+            content: " ";
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p>This is a paragraph.</p>
+</body>
+</html>
+
+<!-- 3. ::first-letter -->
+<!-- Styles the first letter of an element. -->
+
+<html>
+<head>
+    <style>
+        p::first-letter {
+            font-size: 2em;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p>This is a paragraph.</p>
+</body>
+</html>
+
+<!-- 4. ::first-line -->
+<!-- Styles the first line of a block-level element. -->
+
+<html>
+<head>
+    <style>
+        p::first-line {
+            font-weight: bold;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <p>This is a paragraph.</p>
+</body>
+</html>
+
+<!-- 5. ::placeholder -->
+<!-- styles placeholder text inside input fields. -->
+
+<html>
+<head>
+    <style>
+        input::placeholder {
+            color: gray;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="Enter your name">
+</body>
+</html>
+
+<!-- 6. ::marker -->
+<!-- Styles the marker box of a list item. -->
+
+<html>
+<head>
+    <style>
+        li::marker {
+            color: purple;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,88 @@
+
+    <!-- Structural targeting pseudo classes -->
+
+<!-- 1. :first-child -->
+<!-- Matches the first child of its parent -->
+
+<html>
+<head>
+    <style>
+        p:first-child {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>This is the first paragraph.</p>
+        <p>This is the second paragraph.</p>
+    </div>
+</body>
+</html>
+
+
+<!-- 2. :last-child -->
+<!-- Matches the last child of its parent -->
+
+<html>
+<head>
+    <style>
+        p:last-child {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>This is the first paragraph.</p>
+        <p>This is the last paragraph.</p>
+    </div>
+</body>
+</html>
+
+<!-- 3. :nth-child(n) -->
+<!-- Matches the nth child of its parent, where n can be number,keyword etc -->
+
+<html>
+<head>
+    <style>
+        p:nth-child(4) {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>This is the first paragraph.</p>
+        <p>This is the second paragraph.</p>
+        <p>This is the third paragraph.</p>
+        <p>This is the fourth paragraph.</p>
+        <p>This is the fifth paragraph.</p>
+    </div>
+</body>
+</html>
+
+<!-- 4. :nth-last-child(n)   - from last --> 
+
+<!-- 5. :nth-of-type(n) -->
+<!-- Matches the nth child of its type within its parent -->
+
+<html>
+<head>
+    <style>
+        p:nth-of-type(2) {
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>This is the first paragraph.</p>
+        <span>Some text</span>
+        <p>This is the second paragraph.</p>
+        <p>This is the third paragraph.</p>
+    </div>
+</body>
+</html>
+
+<!-- similarlly we have (:nth-last-of-type(n),:last-of-type,:nth-last-of-type(n) etc) -->

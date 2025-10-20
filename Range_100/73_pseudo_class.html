@@ -1,0 +1,67 @@
+
+      <!-- Structural targeting pseudo classes -->
+
+<!-- 9. :only-child -->
+<!-- Matches elements that are the only child of their parent. -->
+
+<html>
+<head>
+    <style>
+        p:only-child {
+            color: teal;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>This is the only paragraph.</p>
+    </div>
+</body>
+</html>
+
+<!-- 10. :only-of-type -->
+<!-- Matches elements that are the only instance of their type within a parent. -->
+
+<html>
+<head>
+    <style>
+        p:only-of-type {
+            color: coral;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>This is the only paragraph.</p>
+        <span>Some text</span>
+    </div>
+</body>
+</html>
+
+<!-- 11. :empty -->
+<!-- Matches elements with no children or content. -->
+
+<html>
+<head>
+    <style>
+        div:empty {
+            background-color: green;
+        }
+        #one {
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="one"></div>
+    <div>
+        <p>This div has content.</p>
+    </div>
+</body>
+</html>
+
+
+
+
+

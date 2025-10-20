@@ -1,0 +1,63 @@
+
+<!-- 5. [attribute^="value"] Selector -->
+<!-- This selector matches elements whose attribute value begins with the specified value. -->
+<html>
+<head>
+    <style>
+        /* Styles links with href starting with 'https' */
+        [href^="https"] {
+            text-decoration: underline;
+            color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://example.com/">Visit Example</a>
+    <br>
+    <a href="mailto:contact@example.com">Email Us</a>
+</body>
+</html>
+
+<!-- 6. [attribute$="value"] Selector -->
+<!-- This selector matches elements whose attribute value ends with the specified value. -->
+
+
+<!-- 7. [attribute="value"] Selector* -->
+<!-- This selector matches elements whose attribute value contains the specified value anywhere within it. -->
+
+<html>
+<head>
+    <style>
+        /* Selects all div elements where class contains "box" */
+        div[class*="box"] {
+            background-color: lightgreen;
+            color: darkgreen;
+            padding: 20px;
+            border: 2px solid green;
+        }
+    </style>
+</head>
+<body>
+    <div class="small-box">This is a small box</div>
+    <div class="large-box">This is a large box</div>
+    <div class="circle">This is not a box</div>
+</body>
+</html>
+
+<!-- 8. Combining Attribute Selectors -->
+<!-- You can combine multiple attribute selectors to refine your targeting. -->
+
+<html>
+<head>
+    <style>
+        /* Styles inputs that are both type="text" and data-required="true" */
+        [type="text"][data-required="true"] {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" data-required="true">
+    <input type="password" data-required="true">
+</body>
+</html>

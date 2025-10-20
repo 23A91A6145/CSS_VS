@@ -1,0 +1,122 @@
+
+     <!-- Form Pseudo-Classes -->
+
+<!-- 1. :checked -->
+<!-- Matches checkboxes or radio buttons that are selected. -->
+
+<html>
+<head>
+    <style>
+        input:checked {
+            outline: 5px solid red;
+        }
+    </style>
+</head>
+<body>
+    Agree to terms <input type="checkbox">
+</body>
+</html>
+
+<!-- 2. :disabled -->
+<!-- Matches elements that are disabled. -->
+
+<html>
+<head>
+    <style>
+        input:disabled {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" disabled placeholder="Disabled input">
+</body>
+</html>
+
+<!-- 3. :enabled -->
+<!-- Matches elements that are enabled. -->
+
+<html>
+<head>
+    <style>
+        input:enabled {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="Enabled input">
+</body>
+</html>
+
+<!-- 4. :required -->
+<!-- Matches form fields marked as required. -->
+
+<html>
+<head>
+    <style>
+        input:required {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input type="text" required placeholder="This field is required">
+    </form>
+</body>
+</html>
+
+<!-- 5. :optional -->
+<!-- Matches form fields that are not required. -->
+
+<html>
+<head>
+    <style>
+        input:optional {
+            border: 2px solid green;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input type="text" placeholder="This field is optional">
+    </form>
+</body>
+</html>
+
+<!-- 6. :valid -->
+<!-- Matches form fields with valid input types entered in them. -->
+
+<html>
+<head>
+    <style>
+        input:valid {
+            border: 2px solid green;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input type="email" placeholder="Enter valid email" required>
+    </form>
+</body>
+</html>
+
+<!-- 7. :invalid -->
+<!-- Matches form fields with invalid input entered in them. -->
+
+<html>
+<head>
+    <style>
+        input:invalid {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input type="email" placeholder="Enter invalid email" required>
+    </form>
+</body>
+</html>

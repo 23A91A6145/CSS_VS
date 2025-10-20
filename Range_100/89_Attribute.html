@@ -1,0 +1,95 @@
+
+
+         <!-- Attribute Selector -->
+<!-- To select elements based on the presence, value, or specific characteristics of their attributes. -->
+
+<!-- Types of CSS Attribute Selectors -->
+
+<!-- 1. [attribute] Selector -->
+<!-- This selector matches all elements with the specified attribute, regardless of its value. -->
+
+<html>
+<head>
+    <style>
+        /* Styles all elements with a 'placeholder' attribute */
+        [placeholder] {
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="Enter your name">
+    <input type="password" placeholder="Enter your password">
+</body>
+</html>
+
+<!-- 2. [attribute="value"] Selector -->
+<!-- This selector matches elements with an attribute whose value is exactly equal to the specified value. -->
+
+<html>
+<head>
+    <style>
+        /* Styles the button with type="submit" */
+        [type="submit"] {
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+</body>
+</html>
+
+<!-- 3. [attribute~="value"] Selector -->
+<!-- This selector matches elements where the attribute's value is a space-separated
+ list of words and one of the words matches the specified value. -->
+
+<html>
+<head>
+    <style>
+        /* Styles elements where class includes 'green' */
+        [class~="green"] {
+            border: 3px solid red;
+        }
+        .box {
+            height: 100px;
+            width: 100px;
+            position: relative;
+            background-color: green;
+        }
+        .container {
+            display: flex;
+            height: 500px;
+            width: 100vw;
+            gap: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box large green"></div>
+        <div class="box small red"></div>
+    </div>
+</body>
+</html>
+
+<!-- 4. [attribute|="value"] Selector -->
+<!-- This selector matches elements where the attribute's value starts with the specified value,
+ followed by a hyphen. It is often used for language codes. -->
+<html>
+<head>
+    <style>
+        /* Styles elements with lang="en-US" or lang="en-GB" */
+        [lang|="en"] {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p lang="en-US">Hello</p>
+    <p lang="en-GB">Hello</p>
+    <p lang="fr">Bonjour</p>
+</body>
+</html>

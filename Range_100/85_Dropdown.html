@@ -1,0 +1,49 @@
+
+    <!-- Image Dropdown -->
+ <!-- enlarges the image when hovered over, providing a zoom effect. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Dropdown</title>
+    <style>
+        .dropmenu {
+            position: relative;
+            display: inline-block;
+            margin-left: 150px;
+        }
+        .sub-dropmenu {
+            display: none;
+            position: absolute;
+        }
+        .dropmenu:hover .sub-dropmenu {
+            display: block;
+        }
+        .enlarge {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .gfg {
+            margin-left: 40px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="gfg">Image Dropdown property</div>
+    <div class="dropmenu">
+        <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/temp1.png" 
+             width="150" 
+             height="50" align="middle">
+        <div class="sub-dropmenu">
+            <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/temp1.png" 
+                 width="600" 
+                 height="200">
+        </div>
+    </div>
+</body>
+</html>

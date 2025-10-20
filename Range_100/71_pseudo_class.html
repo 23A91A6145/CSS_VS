@@ -1,0 +1,124 @@
+
+
+         <!-- Pseudo-classes - prefixed by a colon (:) -->
+
+<!-- A pseudo-class is a keyword added to a CSS selector that specifies a special state of the selected elements.  -->
+
+        <!-- Interactive/User Action Pseudo-Classes -->
+<!-- 1. :hover --> 
+<!-- This applies when the user hovers over an element. -->
+
+<html>
+<head>
+    <style>
+        button:hover {
+            background-color: lightblue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <button>Hover over me!</button>
+</body>
+</html>
+
+
+<!-- 2. :focus -->
+<!-- Applies when an element receives focus  -->
+
+<html>
+<head>
+    <style>
+        input:focus {
+            border: 2px solid blue;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="Click to focus">
+</body>
+</html>
+
+<!-- 3. :active -->
+<!-- Applies when an element is being clicked . -->
+
+<html>
+<head>
+    <style>
+        button:active {
+            background-color: darkblue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <button>Click me!</button>
+</body>
+</html>
+
+<!-- 4. :visited -->
+<!-- Applies to links that the user has already visited. -->
+
+<html>
+<head>
+    <style>
+        a:visited {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.example.com//">Visit this link</a>
+</body>
+</html>
+
+<!-- 5. :link -->
+<!-- Applies to links that have not yet been visited. -->
+
+<html>
+<head>
+    <style>
+        a:link {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.example.com//">Visit this link</a>
+</body>
+</html>
+
+<!-- 6. :focus-visible -->
+<!-- Applies when an element is focused and the focus should be visible. -->
+
+<html>
+<head>
+    <style>
+        button:focus-visible {
+            outline: 3px solid orange;
+        }
+    </style>
+</head>
+<body>
+    <button>Click or Tab to focus</button>
+</body>
+</html>
+
+<!-- 7. :focus-within -->
+<!-- Applies to an element that contains a focused element. -->
+
+<html>
+<head>
+    <style>
+        .form-container:focus-within {
+            border: 2px solid green;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <input type="text" placeholder="Type here">
+    </div>
+</body>
+</html>

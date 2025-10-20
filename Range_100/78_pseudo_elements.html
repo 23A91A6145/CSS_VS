@@ -1,0 +1,49 @@
+
+
+        <!-- Pseudo-elements for Specific Contexts -->
+
+  <!-- ::file-selector-button  -->
+ <!-- helps to style the button of a input type file. -->
+
+ <html>
+<head>
+    <style>
+        ::file-selector-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        ::file-selector-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h2>Custom File Selector Button</h2>
+    <input type="file">
+</body>
+</html>
+
+
+    <!-- ::spelling-error -->
+<!-- styles text that has been flagged as a spelling error by the browser's spell-check functionality. -->
+
+<html>
+<head>
+    <style>
+        ::spelling-error {
+            background-color: #ffdddd;
+            text-decoration: underline solid red;
+        }
+    </style>
+</head>
+<body>
+    <h2>Spelling Error Detection</h2>
+    <input type="text" value="Ths is a splling eror" spellcheck="true">
+</body>
+</html>
+

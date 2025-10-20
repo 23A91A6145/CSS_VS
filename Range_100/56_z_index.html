@@ -1,0 +1,43 @@
+
+
+    <!-- Z-Index  -->
+<!-- Used to control the stacking order of overlapping elements, -->
+<!-- whether an element appears on top or behind others based on their assigned value. -->
+
+  <!-- Z-Index properties
+
+1. auto -	The stack order is equal to that of the parent (default).
+2. number -	The stack order depends on the number.
+3. initial -	Sets the property to its default value.
+4. inherit -	Inherits the property from the parent element. -->
+
+
+        <!-- Number  -->
+
+<html>
+<head>
+    <style>
+        div {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+        }
+        .box1 {
+            background-color: red;
+            z-index: 1;
+            top: 50px;
+            left: 50px;
+        }
+        .box2 {
+            background-color: blue;
+            z-index: 10;
+            top: 70px;
+            left: 70px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

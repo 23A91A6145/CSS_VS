@@ -1,0 +1,29 @@
+
+    <!-- Creating Outlined Lists with Counters -->
+
+<html>
+<head>
+    <style>
+        ol {
+            counter-reset: section;
+            list-style-type: none;
+        }
+        li::before {
+            counter-increment: section;
+            content: counters(section, ".") " ";
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>Pizza</li>
+        <li>Hamburger
+            <ol>
+                <li>Beef</li>
+                <li>Chicken</li>
+            </ol>
+        </li>
+        <li>Hotdogs</li>
+    </ol>
+</body>
+</html>

@@ -1,0 +1,70 @@
+
+     <!-- Form Pseudo-Classes -->
+
+<!-- 8. :in-range -->
+<!-- Matches inputs within a valid range (e.g., a number input). -->
+
+<html>
+<head>
+    <style>
+        input:in-range {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input type="number" min="1" max="10" placeholder="Pick a number between 1 and 10">
+    </form>
+</body>
+</html>
+
+<!-- 9. :out-of-range -->
+<!-- Matches inputs outside the valid range. -->
+
+<html>
+<head>
+    <style>
+        input:out-of-range {
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input type="number" min="1" max="10" placeholder="Pick a number between 1 and 10">
+    </form>
+</body>
+</html>
+
+<!-- 10. :read-only -->
+<!-- Matches elements that are read-only. -->
+
+<html>
+<head>
+    <style>
+        input:read-only {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" value="This is read-only" readonly>
+</body>
+</html>
+
+<!-- 11. :read-write -->
+<!-- Matches elements that are editable. -->
+
+<html>
+<head>
+    <style>
+        input:read-write {
+            background-color: lightyellow;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="You can type here">
+</body>
+</html>

@@ -1,0 +1,47 @@
+
+
+
+<!-- 7. ::selection -->
+<!-- Styles the portion of an element that has been highlighted by the user. -->
+
+<html>
+<head>
+    <style>
+        ::selection {
+            background: yellow;
+            color:green;
+        }
+    </style>
+</head>
+<body>
+    <p>Select some text in this paragraph to see the effect.</p>
+</body>
+</html>
+
+<!-- 8. ::backdrop -->
+<!-- It helps to style the background of the dialog box opened as a modal on the screen of the user using ,<dialog  -->
+
+<html>
+<head>
+    <style>
+        dialog::backdrop {
+            background: rgba(232, 233, 0, 0.5);
+        }
+
+        dialog {
+            border: none;
+            padding: 20px;
+            background: white;
+        }
+    </style>
+</head>
+<body>
+    <dialog id="myDialog">This is a dialog box.</dialog>
+    <script>
+        const dialog = document.getElementById("myDialog");
+        if (dialog) {
+            dialog.showModal();
+        }
+    </script>
+</body>
+</html>

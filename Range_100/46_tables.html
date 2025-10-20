@@ -1,0 +1,61 @@
+
+
+        <!-- 6. Table layout -->
+<!-- used to set up the layout algorithm used for the table. -->
+
+<html>
+<head>
+    <style>
+    table.one {
+        width: 80px;
+        border-collapse: separate;
+        border-spacing: 10px;
+        table-layout: auto;
+    }
+    table.two {
+        width: 80px;
+        border-collapse: separate;
+        border-spacing: 10px;
+        table-layout: fixed;
+    }
+    table,
+    td,
+    th {
+        border: 1.5px solid blue;
+        width: 80px;
+    }
+    </style>
+</head>
+<body>
+    <table class="one">
+        <tr>
+            <th>Roll Number</th>
+            <th>Name</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>A_B_C_D_E_F_G_H_I_J_K_L_M_N_O_P</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>X_Y_Z</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <table class="two">
+        <tr>
+            <th>Roll Number</th>
+            <th>Name</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>A_B_C_D_E_F_G_H_I_J_K_L_M_N_O_P</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>X_Y_Z</td>
+        </tr>
+    </table>
+</body>
+</html>

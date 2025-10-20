@@ -1,0 +1,40 @@
+
+
+    <!-- Combining z-index with Multiple Contexts -->
+
+<html>
+<head>
+    <style>
+        .parent {
+            position: relative;
+            z-index: 1;
+            background-color: lightgray;
+            width: 200px;
+            height: 200px;
+        }
+
+        .child1 {
+            position: absolute;
+            z-index: 2;
+            background-color: red;
+            width: 100px;
+            height: 100px;
+        }
+        .child2 {
+            position: absolute;
+            z-index: 1;
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            top: 50px;
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child1"></div>
+        <div class="child2"></div>
+    </div>
+</body>
+</html>
