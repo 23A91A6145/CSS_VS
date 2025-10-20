@@ -1,0 +1,65 @@
+
+
+     <!-- Display properties  -->
+
+<!-- specifies an element's display behaviour (the type of rendering box). -->
+<!-- determining its positioning and interaction within the document's flow and structure. -->
+
+<!-- Display Property Values are inline,block,inline-block,flex,grid,none,etc  -->
+
+<!-- 1.Display-Block -->
+
+ <!-- It places them vertically, one after another(we can adjust dimensions etc) -->
+
+ <html>
+<head>
+    <style>
+        #geeks1 {
+            height: 100px;
+            width: 200px;
+            background: teal;
+            display: block;
+        }
+
+        #geeks2 {
+            height: 100px;
+            width: 200px;
+            background: cyan;
+            display: block;
+        }
+
+        #geeks3 {
+            height: 100px;
+            width: 200px;
+            background: green;
+            display: block;
+        }
+
+        .gfg {
+            margin-left: 20px;
+            font-size: 42px;
+            font-weight: bold;
+            color: #009900;
+        }
+
+        .geeks {
+            font-size: 25px;
+            margin-left: 30px;
+        }
+
+        .main {
+            margin: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="gfg">GeeksforGeeks</div>
+    <div class="geeks">display: block; property</div>
+    <div class="main">
+        <div id="geeks1">Block 1</div>
+        <div id="geeks2">Block 2</div>
+        <div id="geeks3">Block 3</div>
+    </div>
+</body>
+</html>
